@@ -6,6 +6,11 @@
 :root {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -725,6 +730,7 @@ h2 {
         --margin-bottom: 0;
     }
 
+
     .header__button {
         font-size: 14px;
         padding: 10px 10px;
@@ -736,8 +742,19 @@ h2 {
     }
 
     h2.title,
-    h3.title {
+    h3.title,
+    title {
         font-size: 40px;
+    }
+
+    .our-dishes__title {
+        margin-bottom: 50px;
+    }
+
+    .our-menu__title,
+    .cooks__title,
+    .gallery__title {
+        margin-bottom: 40px;
     }
 }
 
@@ -790,8 +807,31 @@ h2 {
         height: 274px;
         object-fit: cover;
     }
+
     .order__title {
         font-size: 35px;
     }
+
+}
+
+/* 421 */
+@media (max-width: 429px) {
+    .order__title {
+        font-size: 31px;
+    }
+
+    .order__subtitle {
+        font-size: 16px;
+    }
+
+    h2.title,
+    h3.title,
+    .title {
+        font-size: 35px;
+    }
+    .main__title {
+        font-size: 40px;
+    }
+
 
 }
